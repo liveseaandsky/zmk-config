@@ -75,7 +75,7 @@
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&trans     &kp ≡        &kp ∩        &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &trans
+&trans     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &trans
 &trans     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &trans   
 &trans     &trans       &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
