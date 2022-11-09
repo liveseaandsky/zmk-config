@@ -10,16 +10,7 @@
 
 #define XXX 3
 
-/ {
-    macros {
-		ZMK_MACRO(equiv,
-			wait-ms = <1>;
-			tap-ms = <1>;
-			bindings
-				= <&macro_tap     &kp RALT &kp U &kp KP_N2 &kp KP_N4 &kp KP_N0 &kp RET>;
-		)
-	};
-};
+
 
 / {
     keymap {
