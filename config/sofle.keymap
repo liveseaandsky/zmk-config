@@ -10,9 +10,13 @@
 / {
     macros {
 		ZMK_MACRO(my_macro,
-			wait-ms = <30>;
+			wait-ms = <40>;
 			tap-ms = <40>;
-			bindings = <&kp Z &kp M &kp K>;
+			bindings
+				= <&macro_press   &kp LALT>
+				, <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N6 &kp KP_N3>
+				, <&macro_release &kp LALT>
+				;
 		)
 	};
 };
