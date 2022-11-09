@@ -88,7 +88,7 @@
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&equiv     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &trans 
+&trans     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &trans 
 &trans     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &trans 
 &trans     &trans       &trans       &trans       &trans       &trans                   &trans    &trans    &trans   &trans    &trans  &trans   
 &trans     &trans       &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
