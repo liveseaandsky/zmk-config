@@ -123,11 +123,11 @@
 // |SHIFT|   α  |   β  |   ε   |   λ   |   π  |      |  |      |   ∀   |   ∃   |   !   |   ?   |   ∂   | SHIFT |
 //              |      |       |       |      |      |  |      |       |       |       |       |
             bindings = <
-&none      &none        &none        &none        &none        &none                    &kp DLLR     &kp PRCNT &kp TILDE &kp UNDER &none    &none 
-&kp TAB    &none        &none        &kp AT       &kp HASH     &kp AMPS                 &none        &kp GRAVE &kp SQT   &kp LBRC  &kp RBRC &kp BSPC
-&none      &none        &none        &kp LT       &kp GT       &none                    &kp KP_EQUAL &kp LEFT  &kp RIGHT &none     &none    &none    
-&none      &none        &none        &none        &none        &none   &none    &none   &none        &none     &kp EXCL  &kp QMARK &none    &kp RSHFT 
-                        &trans       &trans       &trans       &trans   &trans  &trans  &trans       &trans    &trans    &trans 
+&none      &none        &none        &none        &none        &none                    &kp DLLR     &kp PRCNT &kp TILDE2 &kp UNDER &none    &none 
+&kp TAB    &none        &none        &kp AT       &kp HASH     &kp AMPS                 &none        &kp GRAVE &kp SQT    &kp LBRC  &kp RBRC &kp BSPC
+&none      &none        &none        &kp LT       &kp GT       &none                    &kp KP_EQUAL &kp LEFT  &kp RIGHT  &none     &none    &none    
+&none      &none        &none        &none        &none        &none   &none    &none   &none        &none     &kp EXCL   &kp QMARK &none    &kp RSHFT 
+                        &trans       &trans       &trans       &trans   &trans  &trans  &trans       &trans    &trans     &trans 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
