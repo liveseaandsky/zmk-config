@@ -124,7 +124,7 @@
 //              |      |       |       |      |      |  |      |       |       |       |       |
             bindings = <
 &none      &none        &none        &none        &none        &none                    &kp DLLR     &kp PRCNT &kp TILDE2 &kp UNDER &none    &none 
-&kp TAB    &none        &none        &kp AT       &kp HASH     &kp AMPS                 &none        &kp GRAVE &kp SQT    &kp LBRC  &kp RBRC &kp BSPC
+&kp TAB    &none        &none        &kp LS(SQT)  &kp NUHS     &kp AMPS                 &none        &kp GRAVE &kp SQT    &kp LBRC  &kp RBRC &kp BSPC
 &none      &none        &none        &kp LT       &kp GT       &none                    &kp KP_EQUAL &kp LEFT  &kp RIGHT  &none     &none    &none    
 &none      &none        &none        &none        &none        &none   &none    &none   &none        &none     &kp EXCL   &kp QMARK &none    &kp RSHFT 
                         &trans       &trans       &trans       &trans   &trans  &trans  &trans       &trans    &trans     &trans 
