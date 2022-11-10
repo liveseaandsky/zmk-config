@@ -62,7 +62,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3   &kp N4      &kp N5                          &kp N6  &kp N7   &kp N8     &kp N9    &kp N0   &none 
+&kp ESC    &kp N1  &kp N2    &kp N3   &kp N4      &kp N5                          &kp N6  &kp N7   &kp N8     &kp N9    &kp N0   &kp DEL 
 &kp TAB    AC(Q)   AC(W)     AC(E)     AC(R)      AC(T)                           AC(Y)   AC(U)    AC(I)      AC(O)     AC(P)    &kp BSPC
 &none      AC(A)   AC(S)     AC(D)     AC(F)      AC(G)                           AC(H)   AC(J)    AC(K)      AC(L)     &kp SEMI &kp SQT
 &kp LSHIFT AC(Z)   AC(X)     AC(C)     AC(V)      AC(B)   &kp C_MUTE    &none     AC(N)   AC(M)    &kp COMMA  &kp DOT   &kp FSLH &kp RSHFT
@@ -103,10 +103,10 @@
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &none     &none     &none    &none     &kp KP_N0  &kp LOCKING_NUM
-&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &none        &none                    &kp PG_UP &none     &kp UP   &none     &kp N0  &kp KP_NUMLOCK
-&trans     &kp LALT     &kp LCTRL    &kp LSHFT    &none        &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
-&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &none   &none    &none   &none     &none     &none    &none     &none   &trans
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &none     &none     &none    &none     &kp KP_N0 &kp LOCKING_NUM
+&trans     &kp INS      &kp PSCRN    &kp K_CMENU  &none        &none                    &kp PG_UP &none     &kp UP   &none     &kp N0    &kp KP_NUMLOCK
+&trans     &kp LALT     &kp LCTRL    &kp LSHFT    &none        &kp CLCK                 &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL   &kp BSPC
+&trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &none   &none    &none   &none     &none     &none    &none     &none     &trans
                         &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
             >;
 
@@ -117,17 +117,17 @@
 		
 		sail_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-// |     | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
-// |     | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
-// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
-//              |      |       |       |      |      |  |      |      |      |       |      |
+// |     |  ≡   |   ∩  |   ∪   |   ⊂   |   $  |                |   $   |   %   |   ~   |   _   |       |       |
+// |     |      |      |   @   |   #   |   &  |                |       |   `   |   '   |   {   |   }   |  BKSP |
+// |  ⊗  |  ≤   |   ≥  |   <   |   >   |   ≠  |                |   =   |   ←   |   →   |   ↔   |   ↓   |       |
+// |SHIFT|   α  |   β  |   ε   |   λ   |   π  |      |  |      |   ∀   |   ∃   |   !   |   ?   |   ∂   | SHIFT |
+//              |      |       |       |      |      |  |      |       |       |       |       |
             bindings = <
-&equiv     &equiv2      &kp KP_N2    &kp KP_N3    &kp KP_N4    &kp KP_N5                &kp KP_N6 &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_N0 &kp KP_NUM 
-&none      &none        &none        &none        &none        &none                    &none     &none     &none    &none     &none   &kp KP_PLUS 
-&none      &none        &none        &none        &none        &none                    &none     &none     &none    &none     &none   &none    
-&none      &none        &none        &none        &none        &none   &none    &none   &none     &none     &none    &none     &none   &none 
-                        &none        &none        &none        &none   &none    &none   &none     &none     &none    &none 
+&none      &none        &none        &none        &none        &none                    &kp DLLR     &kp PRCNT &kp TILDE &kp UNDER &none    &none 
+&kp TAB    &none        &none        &kp AT       &kp HASH     &kp AMPS                 &none        &kp GRAVE &kp SQT   &kp LBRC  &kp RBRC &kp BSPC
+&none      &none        &none        &kp LT       &kp GT       &none                    &kp KP_EQUAL &kp LEFT  &kp RIGHT &none     &none    &none    
+&none      &none        &none        &none        &none        &none   &none    &none   &none        &none     &kp EXCL  &kp QMARK &none    &kp RSHFT 
+                        &trans       &trans       &trans       &trans   &trans  &trans  &trans       &trans    &trans    &trans 
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
