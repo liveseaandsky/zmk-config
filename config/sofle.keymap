@@ -70,7 +70,7 @@
 &kp TAB    AC(Q)   AC(W)     AC(E)     AC(R)      AC(T)                           AC(Y)   AC(U)     AC(I)      AC(O)     AC(P)    &kp BSPC
 &mo 3      AC(A)   AC(S)     AC(D)     AC(F)      AC(G)                           AC(H)   AC(J)     AC(K)      AC(L)     &kp SEMI &kp SQT
 &kp LSHIFT AC(Z)   AC(X)     AC(C)     AC(V)      AC(B)   &kp C_MUTE    &none     AC(N)   AC(M)     &kp COMMA  &kp DOT   &kp FSLH &kp RSHFT
-                   &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE     &kp RET   &mo 2   &kp RCTRL &to 5      &to 4
+                   &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE     &kp RET   &mo 2   &kp RCTRL &mo 3      &to 4
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
