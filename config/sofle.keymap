@@ -10,7 +10,7 @@
 
 
 #define 	SAIL 3
-#define 	WASDGAMING 4
+#define 	wasdGAMING 4
 #define 	esdfGAMING 5
 
 
