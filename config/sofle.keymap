@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define 	SAIL 3
-#define 	wasdGAMING 4
-#define 	esdfGAMING 5
+#define SAIL 3
+#define wasdGAMING 4
+#define esdfGAMING 5
 #define HYP(key) LS(LC(LA(LG(key))))
 #define MEH(key) LS(LC(LA(key)))
 
@@ -36,7 +36,6 @@
 		)
 	};
 };
-
 
 
 #define AC(keycode) &as LC(keycode) keycode     // Autoctrl Macro
