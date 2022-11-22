@@ -36,16 +36,6 @@
 	};
 };
 
-/ {
-    macros {
-		ZMK_MACRO(norepeat
-			wait-ms = <0>;
-			tap-ms = <0>;
-			bindings
-				= <&macro_tap     &kt KP_N2 &kp KP_N2 &kp KP_N6 &kp KP_N1 &kp LALT &kp X>;
-		)
-	};
-};
 
 #define AC(keycode) &as LC(keycode) keycode     // Autoctrl Macro
 
