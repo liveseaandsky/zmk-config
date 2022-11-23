@@ -93,7 +93,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |  MIC  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&kp ESC    &ac N1 F1 &ac N2 F2 &ac N3 F3  &ac N4 F4  &ac N5 F5                           &ac N6 F6 &ac N7 F7 &ac N8 F8  &ac N9 F9 &ac N0 F10 &kp DEL 
+&kp ESC    &ac F1 N1 &ac F2 N2 &ac F3 N3  &ac F4 N4  &ac F5 N5                           &ac F6 N6 &ac F7 N7 &ac F8 N8  &ac F9 N9 &ac F0 N10 &kp DEL 
 &kp TAB    AC(Q)     AC(W)      AC(E)     AC(R)      AC(T)                               AC(Y)     AC(U)     AC(I)      AC(O)     AC(P)      &kp BSPC
 &mo 3      AC(A)     AC(S)      AC(D)     AC(F)      AC(G)                               AC(H)     AC(J)     AC(K)      AC(L)     &kp SEMI   &kp SQT
 &kp LSHIFT AC(Z)     AC(X)      AC(C)     AC(V)      AC(B)   &tdmedia    &kp MEH(M)      AC(N)     AC(M)     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
