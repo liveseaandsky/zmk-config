@@ -63,7 +63,7 @@
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings =
-				<&ht C_PLAY_PAUSE C_MUTE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
+				<&ht C_MUTE C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
         };
     };
 };
