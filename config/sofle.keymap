@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define 	SAIL 3
-#define 	wasdGAMING 4
-#define 	esdfGAMING 5
+#define SAIL 3
+#define wasdGAMING 4
+#define esdfGAMING 5
 #define HYP(key) LS(LC(LA(LG(key))))
 #define MEH(key) LS(LC(LA(key)))
 
@@ -38,11 +38,11 @@
 };
 
 
-#define AC(keycode) &as LC(keycode) keycode     // Autoctrl Macro
+#define AC(keycode) &ac LC(keycode) keycode     // Autoctrl Macro
 
 / {
     behaviors {
-        as: auto_ctrl {
+        ac: auto_ctrl {
             compatible = "zmk,behavior-hold-tap";
             label = "AUTO_CTRL";
             #binding-cells = <2>;
@@ -63,12 +63,24 @@
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings =
-				<&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREVIOUS>,
-				<&kp C_MUTE>;
+				<&ht C_PLAY_PAUSE C_MUTE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
         };
     };
 };
 
+/ {
+    behaviors {
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            quick_tap_ms = <125>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+};
 
 / {
     keymap {
