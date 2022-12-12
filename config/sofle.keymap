@@ -110,7 +110,7 @@
             bindings = <
 &kp ESC    &ac F1 N1 &ac F2 N2 &ac F3 N3  &ac F4 N4     &ac F5 N5                             &ac F6 N6 &ac F7 N7 &ac F8 N8  &ac F9 N9 &ac F10 N0 &kp DEL 
 &kp TAB    AC(Q)     AC(W)      AC(E)     AC(R)         AC(T)                                 AC(Y)     AC(U)     AC(I)      AC(O)     AC(P)      &kp BSPC
-&mo 3      AC(A)     AC(S)      AC(D)     AC(F)         AC(G)                                 AC(H)     AC(J)     AC(K)      AC(L)     &kp SEMI   &kp SQT
+&lt STAR 3 AC(A)     AC(S)      AC(D)     AC(F)         AC(G)                                 AC(H)     AC(J)     AC(K)      AC(L)     &kp SEMI   &kp SQT
 &kp LSHFT  AC(Z)     AC(X)      AC(C)     AC(V)         AC(B)     &tdmedia         &kp MEH(M) AC(N)     AC(M)     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
                      &kp LGUI   &kp LALT  &hmtl LCTRL 2 &kp LCTRL &ht LSHFT SPACE  &kp RET    &mo 2     &kp RCTRL &mo 3      &to 4
             >;
@@ -170,7 +170,7 @@
             bindings = <
 &none      &none        &none        &none        &none        &none                    &kp DLLR     &kp PRCNT &kp TILDE2 &kp UNDER &none    &trans 
 &kp TAB    &none        &none        &kp LS(SQT)  &kp NUHS     &kp AMPS                 &none        &kp GRAVE &kp SQT    &kp LBRC  &kp RBRC &trans
-&none      &none        &none        &kp LT       &kp GT       &none                    &kp KP_EQUAL &kp LEFT  &kp RIGHT  &none     &none    &none    
+&tran      &none        &none        &kp LT       &kp GT       &none                    &kp KP_EQUAL &kp LEFT  &kp RIGHT  &none     &none    &none    
 &none      &none        &none        &none        &none        &none    &trans  &trans  &none        &none     &kp EXCL   &kp QMARK &none    &kp RSHFT 
                         &trans       &trans       &trans       &trans   &trans  &trans  &trans       &trans    &trans     &trans 
             >;
