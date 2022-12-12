@@ -152,7 +152,7 @@
 &trans     &none        &kp HOME     &kp UP       &kp END      &kp PG_UP                         &kp PG_UP &kp HOME  &kp UP   &kp END   &kp PSCRN &trans
 &trans     &kp LSHFT    &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN                         &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp RSHFT &kp RSHFT
 &trans     &kp LCTRL    &none        &none        &none        &none        &trans      &trans  &none     &none     &none    &none     &kp RSHFT &trans
-                        &trans       &trans       &trans       &trans  0    &trans      &trans  &trans    &trans    &trans   &trans
+                        &trans       &trans       &trans       &trans   						&trans      &trans  &trans    &trans    &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
