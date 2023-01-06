@@ -92,7 +92,7 @@
 			global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&mo>, <&tog>;
-        };52
+        };
     };
 };
 
