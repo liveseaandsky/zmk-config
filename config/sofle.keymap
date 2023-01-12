@@ -10,7 +10,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define SAIL 3
-#define esdf 5
+#define esdf 4
 #define MEH(key) LS(LC(LA(key)))
 
 / {
@@ -96,7 +96,7 @@
 &kp TAB    AC(Q)     AC(W)      AC(E)     AC(R)      AC(T)                               AC(Y)     AC(U)     AC(I)      AC(O)     AC(P)      &kp BSPC
 &mo 3      AC(A)     AC(S)      AC(D)     AC(F)      AC(G)                               AC(H)     AC(J)     AC(K)      AC(L)     &kp SEMI   &kp SQT
 &kp LSHIFT AC(Z)     AC(X)      AC(C)     AC(V)      AC(B)   &tdmedia     &kp MEH(M)     AC(N)     AC(M)     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
-                     &kp LGUI   &kp LALT &mo 2       &mo 1   &kp SPACE    &kp RET        &mo 2     &kp RCTRL &kp RALT   &kp RGUI
+                     &kp LGUI   &kp LALT &mo 2       &mo 1   &kp SPACE    &kp RET        &mo 2     &kp RCTRL &kp RALT   &to esdf
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -164,7 +164,7 @@
         };
 		
 		
-		esdfgaming_layer {
+		esdf_layer {
 			bindings = <
 &kp ESC   &kp N1    &kp N2   &kp N3   &kp N4    &kp N5                          &kp N6  &kp N7    &kp N8    &kp N9    &kp N0   &trans
 &kp TAB   &kp CARET &kp Q    &kp W    &kp E     &kp R                           &kp Y   &kp U     &kp I     &kp O     &kp P    &trans
