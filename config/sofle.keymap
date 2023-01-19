@@ -10,8 +10,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define SAIL 3
-#define wasdGAMING 4
-#define esdfGAMING 5
+#define esdf 4
 #define MEH(key) LS(LC(LA(key)))
 
 / {
@@ -97,7 +96,7 @@
 &kp TAB    AC(Q)     AC(W)      AC(E)     AC(R)      AC(T)                               AC(Y)     AC(U)     AC(I)      AC(O)     AC(P)      &kp BSPC
 &mo 3      AC(A)     AC(S)      AC(D)     AC(F)      AC(G)                               AC(H)     AC(J)     AC(K)      AC(L)     &kp SEMI   &kp SQT
 &kp LSHIFT AC(Z)     AC(X)      AC(C)     AC(V)      AC(B)   &tdmedia     &kp MEH(M)     AC(N)     AC(M)     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
-                     &kp LGUI   &kp LALT  &mo 2       &mo 1       &kp SPACE         &kp RET           &mo 2     &kp RCTRL  &mo 3     &to 4
+                     &kp LGUI   &kp LALT &mo 2       &mo 1   &kp SPACE    &kp RET        &mo 2     &kp RCTRL &kp RALT   &to esdf
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -163,29 +162,15 @@
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
-		    
-			
-			
-		wasdgaming_layer {
-			bindings = <
-&kp ESC   &kp N1   &kp N2   &kp N3   &kp N4    &kp N5                          &kp N6  &kp N7    &kp N8    &kp N9    &kp N0   &trans
-&kp TAB   &kp Q    &kp W    &kp E    &kp R     &kp T                           &kp Y   &kp U     &kp I     &kp O     &kp P    &trans
-&none     &kp A    &kp S    &kp D    &kp F     &kp G                           &kp H   &kp J     &kp K     &kp L     &kp SEMI &kp SQT
-&kp LSHFT &kp Z    &kp X    &kp C    &kp V     &kp B     &trans       &trans   &kp N   &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RSHFT
-                   &kp LGUI &kp LALT &kp LCTRL &kp SPACE &kp SPACE    &kp RET  &mo 2   &kp RCTRL &to 5     &to 0
-			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-		};
 		
 		
-		esdfgaming_layer {
+		esdf_layer {
 			bindings = <
 &kp ESC   &kp N1    &kp N2   &kp N3   &kp N4    &kp N5                          &kp N6  &kp N7    &kp N8    &kp N9    &kp N0   &trans
 &kp TAB   &kp CARET &kp Q    &kp W    &kp E     &kp R                           &kp Y   &kp U     &kp I     &kp O     &kp P    &trans
 &kp COMMA &kp LCTRL &kp A    &kp S    &kp D     &kp F                           &kp H   &kp J     &kp K     &kp L     &kp SEMI &kp SQT
 &kp DOT   &kp LSHFT &kp Z    &kp X    &kp C     &kp V     &trans       &trans   &kp N   &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RSHFT
-                    &kp LGUI &kp LALT &kp LCTRL &kp SPACE &kp SPACE    &kp RET  &mo 2   &kp RCTRL &to 4     &to 0
+                    &kp LGUI &kp LALT &kp LCTRL &kp N0    &kp SPACE    &kp RET  &trans  &trans    &trans    &to 0
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
