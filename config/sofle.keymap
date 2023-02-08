@@ -81,6 +81,21 @@
 };
 
 / {
+    behaviors {
+        hltl: hold_layer_tap_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LAYER_TAP_LAYER";
+            #binding-cells = <2>;
+            tapping_term_ms = <200>;
+            quick_tap_ms = <125>;
+			global-quick-tap;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&tog>;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -92,11 +107,11 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |  MIC  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | GUI | ALT  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | ALT   | GUI  |
             bindings = <
-&kp ESC    &ac F1 N1 &ac F2 N2 &ac F3 N3  &ac F4 N4  &ac F5 N5                           &ac F6 N6 &ac F7 N7 &ac F8 N8  &ac F9 N9 &ac F10 N0 &kp DEL 
-&kp TAB    AC(Q)     AC(W)      AC(E)     AC(R)      AC(T)                               AC(Y)     AC(U)     AC(I)      AC(O)     AC(P)      &kp BSPC
-&mo 3      AC(A)     AC(S)      AC(D)     AC(F)      AC(G)                               AC(H)     AC(J)     AC(K)      AC(L)     &kp SEMI   &kp SQT
-&kp LSHIFT AC(Z)     AC(X)      AC(C)     AC(V)      AC(B)   &tdmedia     &kp MEH(M)     AC(N)     AC(M)     &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
-                     &kp LGUI   &kp LALT &mo 2       &mo 1   &kp SPACE    &kp RET        &mo 2     &kp RCTRL &kp RALT   &to esdf
+&kp ESC    &ac F1 N1 &ac F2 N2 &ac F3 N3  &ac F4 N4  &ac F5 N5                                &ac F6 N6  &ac F7 N7     &ac F8 N8  &ac F9 N9 &ac F10 N0 &kp DEL 
+&kp TAB    AC(Q)     AC(W)      AC(E)     AC(R)      AC(T)                                    AC(Y)      AC(U)         AC(I)      AC(O)     AC(P)      &kp BSPC
+&lt STAR 3 AC(A)     AC(S)      AC(D)     AC(F)      AC(G)                                    AC(H)      AC(J)         AC(K)      AC(L)     &kp SEMI   &kp SQT
+&kp LSHFT  AC(Z)     AC(X)      AC(C)     AC(V)      AC(B)          &tdmedia       &kp MEH(M) AC(N)      AC(M)         &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
+                     &kp LGUI   &kp LALT  &mo 2      &kp LSHFT      &lt 1 SPACE    &kp RET    &lt 2 BSPC &mt RCTRL DEL &mo RALT   &to esdf
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -105,7 +120,6 @@
 
 
         lower_layer {
-// TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
 // |  NUM  |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
 // | `     |  _  |  *  |      |  {   |   }  |                   |   6  |   7   |   8   |   9  |    0  |  F12  |
@@ -129,8 +143,8 @@
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |     |      | HOME |   ^   |  END  | PGUP |                | PGUP | HOME |   ^   |  END |       |       |
-// |SHIFT| CTRL |   <- |   v   |  ->   | PGDN |                | PGDN |   <- |   v   |  ->  |  CTRL | SHIFT |
-// |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
+// |SHIFT| SHIFT|   <- |   v   |  ->   | PGDN |                | PGDN |   <- |   v   |  ->  | SHFIT | SHIFT |
+// |     | CTRL |      |       |       |      |      |  |      |      |      |       |      | CTRL  |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                &rgb_ug RGB_TOG &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_SAI     &rgb_ug RGB_SAD     &rgb_ug RGB_EFF
@@ -155,7 +169,7 @@
             bindings = <
 &none      &none        &none        &none        &none        &none                    &kp DLLR     &kp PRCNT &kp TILDE2 &kp UNDER &none    &trans 
 &kp TAB    &none        &none        &kp LS(SQT)  &kp NUHS     &kp AMPS                 &none        &kp GRAVE &kp SQT    &kp LBRC  &kp RBRC &trans
-&none      &none        &none        &kp LT       &kp GT       &none                    &kp KP_EQUAL &kp LEFT  &kp RIGHT  &none     &none    &none    
+&trans     &none        &none        &kp LT       &kp GT       &none                    &kp KP_EQUAL &kp LEFT  &kp RIGHT  &none     &none    &none    
 &none      &none        &none        &none        &none        &none    &trans  &trans  &none        &none     &kp EXCL   &kp QMARK &none    &kp RSHFT 
                         &trans       &trans       &trans       &trans   &trans  &trans  &trans       &trans    &trans     &trans 
             >;
