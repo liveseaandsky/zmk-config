@@ -112,7 +112,7 @@
 &kp TAB    AC(Q)     AC(W)      AC(E)     AC(R)      AC(T)                                    AC(Y)      AC(U)         AC(I)      AC(O)     AC(P)      &kp BSPC
 &lt STAR 3 AC(A)     AC(S)      AC(D)     AC(F)      AC(G)                                    AC(H)      AC(J)         AC(K)      AC(L)     &kp SEMI   &kp SQT
 &kp LSHFT  AC(Z)     AC(X)      AC(C)     AC(V)      AC(B)          &tdmedia       &kp MEH(M) AC(N)      AC(M)         &kp COMMA  &kp DOT   &kp FSLH   &kp RSHFT
-                     &kp LGUI   &kp LALT  &mo 2      &kp LSHFT      &lt 1 SPACE    &kp RET    &lt 2 BSPC &mt RCTRL DEL &mo RALT   &to esdf
+                     &kp LALT   &kp LCTRL &mo 2      &kp LSHFT      &lt 1 SPACE    &kp RET    &lt 2 BSPC &mt RCTRL DEL &mo RALT   &to esdf
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
