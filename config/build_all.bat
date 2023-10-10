@@ -10,4 +10,4 @@ xcopy /v /y "C:\Users\adamg\Desktop\ZMK\zmk\app\build\left\zephyr\zmk.uf2" "C:\U
 xcopy /v /y "C:\Users\adamg\Desktop\ZMK\zmk\app\build\right\zephyr\zmk.uf2" "C:\Users\adamg\Desktop\ZMK\zmk\app\build\output\right.uf2"
 xcopy /v /y "C:\Users\adamg\Desktop\ZMK\zmk\app\build\settings_reset\zephyr\zmk.uf2" "C:\Users\adamg\Desktop\ZMK\zmk\app\build\output\settings_reset.uf2"
 
-start "" "C:\Users\adamg\Desktop\ZMK\zmk\app\build\settings_reset\zephyr\zmk.uf2" "C:\Users\adamg\Desktop\ZMK\zmk\app\build\output\"
+start "" "C:\Users\adamg\Desktop\ZMK\zmk\app\build\output\"
