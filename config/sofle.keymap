@@ -196,7 +196,7 @@
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &kp KP_NUM &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                     &kp F6    &kp F7   &kp F8          &kp F9    &kp F10   &trans
-&kp GRAVE  &kp UNDER &kp STAR  &none       &kp LBRC  &kp RBRC                   &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &trans
+LALT(TAB)  &kp UNDER &kp STAR  &none       &kp LBRC  &kp RBRC                   &kp N6    &kp N7   &kp N8          &kp N9    &kp N0    &trans
 &trans     &kp MINUS &kp PLUS  &kp EQUAL   &kp LPAR  &kp RPAR                   &kp CARET &kp AMPS &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &kp PIPE
 &trans     &none     &none     &none       &kp LBKT  &kp RBKT   &trans   &trans &kp LBKT  &kp RBKT &kp SEMI        &kp COLON &trans    &trans
                      &trans    &trans      &trans    &trans     &trans   &trans &trans    &trans   &trans          &trans
